@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./assets/scss/index.scss";
+// import "./assets/scss/index.scss";
+import "./assets/css/index.css";
 import Modal from "react-modal";
 // pages imports
 import App from "./App";

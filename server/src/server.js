@@ -35,7 +35,7 @@ app.use((req, res, next) => {
 app.use("/api/v1", routes);
 app.use(express.static(path.join(__dirname, "/files")));
 //
-app.get('/', (req, res)=>{
-  res.send("<h1>Test server side performing !!!</h1>")
-})
+// app.get('/', (req, res)=>{
+//   res.send("<h1>Test server side performing !!!</h1>")
+// })
 app.listen(PORT, () => console.log(`Server started at PORT : ${PORT}`));

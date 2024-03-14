@@ -1,0 +1,101 @@
+.table {
+  max-height: calc(100% - 160px);
+  padding: 0 0 1rem 0;
+}
+.table table {
+  height: auto;
+  border-collapse: collapse;
+}
+.table table thead {
+  background-color: var(--grey-color-3);
+  border-top: 1px solid var(--grey-color-2);
+  border-bottom: 1px solid var(--grey-color-2);
+  font-size: var(--size-small-1);
+  color: var(--grey-color-1);
+}
+.table table thead th {
+  padding: 0.5rem;
+  text-align: left;
+}
+.table table tbody tr {
+  border-bottom: 1px solid var(--grey-color-2);
+}
+.table table tbody td {
+  text-align: left;
+  padding: 0.3rem 0.5rem;
+}
+.table table tbody .names span {
+  background-color: var(--grey-color-3);
+  border-radius: 0.5rem;
+  padding: 0.45rem;
+  margin-right: 0.5rem;
+}
+.table table tbody .names div {
+  text-align: left;
+}
+.table table tbody .names div h3 {
+  font-size: var(--size-small-1);
+  letter-spacing: 0.1rem;
+}
+.table table tbody .names div p {
+  font-size: var(--size-small-2);
+  color: var(--grey-color-1);
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+.table table tbody .role {
+  color: var(--black-color);
+  font-size: var(--size-small-1);
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+}
+.table table tbody .status {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--grey-color-2);
+  border-radius: 0.5rem;
+  font-size: var(--size-small-2);
+}
+.table table tbody .success {
+  color: var(--green-color);
+}
+.table table tbody .failed {
+  color: var(--red-color);
+}
+.table table tbody .pending {
+  color: var(--grey-color-1);
+}
+.table table tbody .action .button {
+  margin-right: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid var(--grey-color-2);
+  color: var(--black-color);
+  font-size: var(--size-small-1);
+  transition: all 0.3s ease-in-out;
+  padding: 0.4rem;
+}
+.table table tbody .action .button:hover {
+  background-color: #ffdb9b;
+}
+.pagination {
+  padding: 0.5rem;
+}
+.pagination span {
+  margin-right: 0.5rem;
+}
+.pagination select {
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  margin-right: 1.5rem;
+  border: 1px solid var(--black-color);
+  background-color: transparent;
+}
+.pagination .button {
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid var(--grey-color-2);
+  padding: 0.3rem !important;
+}
+.pagination .button .icon {
+  color: var(--grey-color-2);
+}
