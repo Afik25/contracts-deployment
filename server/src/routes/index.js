@@ -11,6 +11,9 @@ const Signer = require("../api/v1/controllers/Signer");
 //
 // root configure
 router.get("/root", Inscription.rootConfigure);
+router.get("/tr", (req, res)=>{
+  res.send("<h1>TEST : Test server render inside routes performing !!!</h1>")
+});
 //
 router.get("/countries", function (req, res) {
   res.status(200).json({ countries });
