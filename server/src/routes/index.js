@@ -13,13 +13,16 @@ require("dotenv").config("../.env");
 // root configure
 router.get("/root", Inscription.rootConfigure);
 router.get("/c", function (req, res) {
-  res
-    .status(200)
-    .json({
-      "process.env.APP_ENV": process.env.APP_ENV,
-      "process.env.DEV_DB_HOST": process.env.DEV_DB_HOST,
-      "process.env.DEV_DB_DATABASE_NAME": process.env.DEV_DB_DATABASE_NAME,
-    });
+  res.status(200).json({
+    "process.env.APP_ENV": process.env.APP_ENV,
+    "process.env.DEV_DB_HOST": process.env.DEV_DB_HOST,
+    "process.env.DEV_DB_DATABASE_NAME": process.env.DEV_DB_DATABASE_NAME,
+  });
+});
+router.get("/test", function (req, res) {
+  res.status(200).json({
+    "process.env.APP_ENV": "test",
+  });
 });
 //
 router.get("/countries", function (req, res) {
