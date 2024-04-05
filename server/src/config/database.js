@@ -25,6 +25,13 @@ module.exports = {
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_PASSWORD
       : process.env.PROD_DB_PASSWORD,
+  dialectOptions: {
+    bigNumberStrings: true,
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
   // dialectOptions: {
   //   bigNumberStrings: true,
   //   // it must be decomment for production's mode
