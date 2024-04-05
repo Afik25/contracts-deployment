@@ -29,7 +29,7 @@ module.exports = {
     bigNumberStrings: true,
     ssl: {
       require: true,
-      rejectUnauthorized: false,
+      rejectUnauthorized: true,
     },
   },
   // dialectOptions: {
