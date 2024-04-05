@@ -207,6 +207,7 @@ module.exports = {
   },
   async rootConfigure(req, res) {
     try {
+      console.log("Lauch root initial configuration process: Vatel_Contract-Backend");
       const check_username = await User.findOne({
         where: { username: "admin" },
       });
