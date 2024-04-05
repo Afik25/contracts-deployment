@@ -15,7 +15,7 @@ class Login extends Model {
         navigator: DataTypes.STRING,
         refresh_token: DataTypes.TEXT,
         connection_status: DataTypes.INTEGER,
-        updated_at: DataTypes.DATE,
+        // updated_at: DataTypes.DATE,
       },
       {
         sequelize,

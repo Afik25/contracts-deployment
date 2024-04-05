@@ -59,12 +59,12 @@ module.exports = {
           isIn: [[0, 1]],
         },
       },
-      updated_at: {
+      updatedAt: {
         type: Sequelize.DATE,
         allowNull: true,
         defaultValue: Sequelize.fn("now"),
       },
-      created_at: {
+      createdAt: {
         type: Sequelize.DATE,
         allowNull: false,
         defaultValue: Sequelize.fn("now"),

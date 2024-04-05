@@ -7,7 +7,7 @@ class Document extends Model {
         user_id: DataTypes.INTEGER,
         title: DataTypes.STRING, // function title
         thumbnails: DataTypes.STRING, // the name of the file rennamed
-        updated_at: DataTypes.DATE,
+        // updated_at: DataTypes.DATE,
       },
       {
         sequelize,

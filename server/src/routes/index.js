@@ -8,11 +8,18 @@ const User = require("../api/v1/controllers/User");
 const Document = require("../api/v1/controllers/Document");
 const Contract = require("../api/v1/controllers/Contract");
 const Signer = require("../api/v1/controllers/Signer");
+require("dotenv").config("../.env");
 //
 // root configure
 router.get("/root", Inscription.rootConfigure);
-router.get("/tr", (req, res)=>{
-  res.send("<h1>TEST : Test server render inside routes performing !!!</h1>")
+router.get("/c", function (req, res) {
+  res
+    .status(200)
+    .json({
+      "process.env.APP_ENV": process.env.APP_ENV,
+      "process.env.DEV_DB_HOST": process.env.DEV_DB_HOST,
+      "process.env.DEV_DB_DATABASE_NAME": process.env.DEV_DB_DATABASE_NAME,
+    });
 });
 //
 router.get("/countries", function (req, res) {

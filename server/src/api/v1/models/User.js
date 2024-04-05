@@ -18,7 +18,7 @@ class User extends Model {
         is_completed: DataTypes.BOOLEAN,
         sys_role: DataTypes.STRING,
         status: DataTypes.INTEGER,
-        updated_at: DataTypes.DATE,
+        // updated_at: DataTypes.DATE,
       },
       {
         sequelize,

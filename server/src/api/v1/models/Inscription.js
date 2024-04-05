@@ -15,7 +15,7 @@ class Inscription extends Model {
         operating_system: DataTypes.STRING,
         navigator: DataTypes.STRING,
         status: DataTypes.INTEGER,
-        updated_at: DataTypes.DATE,
+        // updated_at: DataTypes.DATE,
       },
       {
         sequelize,

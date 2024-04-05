@@ -9,7 +9,7 @@ class Signer extends Model {
         type: DataTypes.STRING, // destination or in cc
         order: DataTypes.STRING, // function title
         status: DataTypes.INTEGER,
-        updated_at: DataTypes.DATE,
+        // updated_at: DataTypes.DATE,
       },
       {
         sequelize,

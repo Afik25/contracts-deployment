@@ -9,7 +9,7 @@ class Contract extends Model {
         type: DataTypes.STRING, // type of contract (EM: employees or ST: student)
         thumbnails: DataTypes.STRING, // function title
         annotations: DataTypes.TEXT, // function title
-        updated_at: DataTypes.DATE,
+        // updated_at: DataTypes.DATE,
       },
       {
         sequelize,
