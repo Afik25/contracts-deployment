@@ -11,9 +11,6 @@ const Signer = require("../api/v1/controllers/Signer");
 require("dotenv").config("../.env");
 //
 // root configure
-router.get("/", function (_, res) {
-  res.status(200).json({ message:"Welcome to Vatel Smart Contract Platform", developers: "Stephen Nyaranga from Kenya and Amisi Fikirini from Congo-Kinshasa" });
-});
 router.get("/root", Inscription.rootConfigure);
 //
 router.get("/countries", function (req, res) {
