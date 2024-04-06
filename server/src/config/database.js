@@ -26,8 +26,10 @@ module.exports = {
       ? process.env.DEV_DB_PASSWORD
       : process.env.DB_PASSWORD,
   dialectOptions: {
-    connectionString: process.env.DB_CONNECTION_URL,
-    ssl: process.env.DB_CONNECTION_URL ? true : false
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
   },
   pool: {
     max: 5,
