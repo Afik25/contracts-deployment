@@ -25,19 +25,16 @@ module.exports = {
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_PASSWORD
       : process.env.DB_PASSWORD,
+  dialectOptions: {
+    connectionString: process.env.DB_CONNECTION_URL,
+    ssl: process.env.DB_CONNECTION_URL ? true : false
+  },
   pool: {
-    max: 15,
-    min: 5,
+    max: 5,
+    min: 0,
     idle: 20000,
     evict: 15000,
     acquire: 30000,
-  },
-  dialectOptions: {
-    bigNumberStrings: true,
-    ssl: {
-      require: true,
-      rejectUnauthorized: true,
-    },
   },
   // dialectOptions: {
   //   bigNumberStrings: true,
