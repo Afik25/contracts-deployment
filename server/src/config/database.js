@@ -25,6 +25,13 @@ module.exports = {
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_PASSWORD
       : process.env.PROD_DB_PASSWORD,
+  pool: {
+    max: 15,
+    min: 5,
+    idle: 20000,
+    evict: 15000,
+    acquire: 30000,
+  },
   dialectOptions: {
     bigNumberStrings: true,
     ssl: {
