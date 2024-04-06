@@ -3,6 +3,7 @@ const User = require("../models/User");
 const Contract = require("../models/Contract");
 const Document = require("../models/Document");
 //
+require("dotenv").config("../../../../.env");
 const { generateOTP } = require("../../../utils/utils");
 const bcrypt = require("bcrypt");
 const moment = require("moment");
@@ -208,6 +209,10 @@ module.exports = {
   async rootConfigure(req, res) {
     try {
       console.log("Lauch root initial configuration process: Vatel_Contract-Backend");
+      console.log("******************************************************************");
+      console.log(
+        `Server started at PORT : ${process.env.DB_PORT} - HOST : ${process.env.DB_HOST} - DATABASE : ${process.env.DB_NAME} - USER : ${process.env.DB_USER} - PASSWORD : ${process.env.DB_PASSWORD}`
+      )
       const check_username = await User.findOne({
         where: { username: "admin" },
       });

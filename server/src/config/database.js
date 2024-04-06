@@ -3,28 +3,28 @@ module.exports = {
   host:
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_HOST
-      : process.env.PROD_DB_HOST,
+      : process.env.DB_HOST,
   port:
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_PORT
-      : process.env.PROD_DB_PORT,
+      : process.env.DB_PORT,
   dialect:
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_DIALECT
-      : process.env.PROD_DB_DIALECT,
+      : process.env.DB_DIALECT,
   dialectModule: require("pg"),
   database:
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_DATABASE_NAME
-      : process.env.PROD_DB_DATABASE_NAME,
+      : process.env.DB_NAME,
   username:
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_USER
-      : process.env.PROD_DB_USER,
+      : process.env.DB_USER,
   password:
     process.env.APP_ENV == "dev"
       ? process.env.DEV_DB_PASSWORD
-      : process.env.PROD_DB_PASSWORD,
+      : process.env.DB_PASSWORD,
   pool: {
     max: 15,
     min: 5,

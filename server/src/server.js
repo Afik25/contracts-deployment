@@ -35,4 +35,8 @@ app.use((req, res, next) => {
 app.use("/api/v1", routes);
 app.use(express.static(path.join(__dirname, "/files")));
 //
-app.listen(PORT, () => console.log(`Server started at PORT : ${PORT}`));
+app.listen(PORT, () =>
+  console.log(
+    `Server started at PORT : ${PORT} - HOST : ${process.env.DB_HOST} - DATABASE : ${process.env.DB_NAME} - USER : ${process.env.DB_USER} - PASSWORD : ${process.env.DB_PASSWORD}`
+  )
+);
