@@ -32440,3 +32440,5 @@
 20240407	16:00:53	2c75917d-f801-42d8-a089-e4038af6b56b	127.0.0.1:5500	GET	http://localhost:3000	/api/v1/dashboard
 20240407	16:00:53	5431892e-e8ae-4140-8bef-de95fa2498f3	127.0.0.1:5500	GET	http://localhost:3000	/api/v1/dashboard
 20240407	16:01:02	0b014496-72f0-4193-89ff-a248a2320e8e	127.0.0.1:5500	GET	http://localhost:3000	/api/v1/logout
+20240407	16:59:35	73fea57b-172b-4ade-b42c-f1f89765cc22	127.0.0.1:5500	POST	http://localhost:3000	/api/v1/login
+20240407	17:01:00	67854eb9-e0f8-4c67-88b9-73482317c6cb	127.0.0.1:5500	POST	http://localhost:3000	/api/v1/login

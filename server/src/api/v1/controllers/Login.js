@@ -1,6 +1,5 @@
 const User = require("../models/User");
 const Login = require("../models/Login");
-
 //
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
@@ -53,6 +52,10 @@ module.exports = {
         });
       }
       const user_id = user.id;
+      //
+      console.log("*************************************************");
+      console.log({ "chekc user login ": user });
+      console.log("*************************************************");
       //
       const refreshToken = jwt.sign(
         {
