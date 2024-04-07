@@ -100,7 +100,6 @@ const Home = () => {
         <div className="section-one">
           <div className="container">
             <h2 className="t-1">Platform benefits </h2>
-            <h2 className="t-1">{process.env.REACT_APP_SERVER_IP_ADDRESS} --- {process.env.REACT_APP_SERVER_PORT} </h2>
             <p>
               This Vatel platform can be used to verify the identity,
               qualifications, credentials, and experiences of potential
