@@ -1,6 +1,6 @@
 const allowedRequestsOrigins = [
   "http://localhost:3000",
-  "https://contracts-deployment-client-6ry41.kinsta.app/",
+  "https://contracts-deployment-client-6ry41.kinsta.app",
 ];
 module.exports = allowedRequestsOrigins;
 
