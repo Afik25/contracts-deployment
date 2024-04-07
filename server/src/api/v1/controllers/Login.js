@@ -3,7 +3,7 @@ const Login = require("../models/Login");
 //
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-require("dotenv").config();
+require("dotenv").config("../../../../.env");
 const { Op } = require("sequelize");
 
 module.exports = {
